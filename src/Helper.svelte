@@ -8,7 +8,7 @@
   import Header from "./components/Header.svelte";
   import "./components/style";
   import Logo from "./components/logo.svelte";
-  export let tree, port;
+  export let tree, port, routes = [];
   $options.port = port;
   const treeStore = writable(tree);
   setContext("treeStore", treeStore);
@@ -18,7 +18,7 @@
   .routify {
     position: fixed;
     bottom: 0;
-    left: 0;
+    right: 0;
     z-index: 99999;
   }
   .content {

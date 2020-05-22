@@ -26,9 +26,9 @@ function postData(path, data) {
 }
 
 const defaultOptions = {
-    showHelper: false,
+    showHelper: true,
     showTree: true,
-    showFile: true,
+    showFile: false,
     showIndex: false,
     port: null,
     ...JSON.parse(localStorage.getItem('__routify-helper.options')) || {}
