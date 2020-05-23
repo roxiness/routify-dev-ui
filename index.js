@@ -21,7 +21,7 @@ function middleware(payload) {
 function attachTemplate(payload, port) {
     console.log('ATTACHING TEMPLATE')
     payload.template += `    
-import Helper from 'routify-helper/src/Helper.svelte';
+import Helper from 'routify-dev-ui/src/Helper.svelte';
 const oldHelper = document.getElementById('__routify-helper')
 if (oldHelper) oldHelper.remove()
 new Helper({
