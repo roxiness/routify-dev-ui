@@ -6,6 +6,10 @@
   "scripts": {},
   "author": "jakobrosenberg@gmail.com",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sveltech/routify-dev-ui"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
