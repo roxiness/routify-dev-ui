@@ -8,7 +8,7 @@
   import Header from "./components/Header.svelte";
   import "./components/style";
   import Logo from "./components/logo.svelte";
-  export let tree, port, routes = [];
+  export let tree, port;
   $options.port = port;
   const treeStore = writable(tree);
   setContext("treeStore", treeStore);
