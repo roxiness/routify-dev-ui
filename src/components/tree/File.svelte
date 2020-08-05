@@ -1,7 +1,7 @@
 <script>
   import { getContext } from "svelte";
   import { draggedFile, state, options } from "../../api";
-  import { goto, isActive } from "@sveltech/routify";
+  import { goto, isActive } from "@roxi/routify";
 
   import { handleDrag } from "../../handleDrag";
 

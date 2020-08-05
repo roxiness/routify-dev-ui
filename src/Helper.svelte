@@ -1,7 +1,7 @@
 <script>
   import { writable } from "svelte/store";
   import { setContext } from "svelte";
-  import { route } from "@sveltech/routify";
+  import { route } from "@roxi/routify";
   import { options } from "./api";
   import Tree from "./components/tree/Tree.svelte";
   import File from "./components/file/File.svelte";
