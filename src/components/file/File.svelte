@@ -1,5 +1,5 @@
 <script>
-  import { route } from "@sveltech/routify";
+  import { route } from "@roxi/routify";
   import { tree, routes } from "../../api";
   import Input from "./Input.svelte";
   import AddMeta from "./AddMeta.svelte";
