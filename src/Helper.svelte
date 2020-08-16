@@ -1,14 +1,13 @@
 <script>
   import { writable } from "svelte/store";
-  import { setContext } from "svelte";
-  import { route } from "@roxi/routify";
+  import { setContext } from "svelte";  
   import { options } from "./api";
   import Tree from "./components/tree/Tree.svelte";
   import File from "./components/file/File.svelte";
   import Header from "./components/Header.svelte";
   import "./components/style";
   import Logo from "./components/logo.svelte";
-  export let tree, port;
+  export let tree, port, route;
   $options.port = port;
   const treeStore = writable(tree);
   setContext("treeStore", treeStore);
@@ -45,8 +44,8 @@
   }
 </style>
 
-{#if $route}
-  <div class="routify" id="__routify-helper">
+<div class="routify" id="__routify-helper">
+  {#if $route}
     <div on:click={() => ($options.showHelper = !$options.showHelper)}>
       <Logo />
     </div>
@@ -68,5 +67,5 @@
         </div>
       </div>
     {/if}
-  </div>
-{/if}
+  {/if}
+</div>
